@@ -11,7 +11,6 @@ class EmailParser
   end
 
   def parse
-    return emails.split(", ") if emails.include?(",")
-    emails.split(" ")
+    return emails.split(", ").split(" ")
   end
 end
