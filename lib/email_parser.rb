@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    return emails.split(/[\s,]/).unique
+    return emails.split(/[\s,]/).uniq
   end
 end
