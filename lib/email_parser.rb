@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    return emails.split(/[\s,]/).select { |x| x != ""}
+    return emails.split(/[\s,]/).select { |x| x != ""}.uniq!
   end
 end
