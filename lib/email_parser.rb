@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    return emails.split(/[\s,]/).collect { |x| x != ""}
+    return emails.split(/[\s,]/).select { |x| x != ""}
   end
 end
